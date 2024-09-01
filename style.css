@@ -11,7 +11,7 @@ body {
     background-color: black;
     font-family: "Nanum Gothic Coding", system-ui;
     color: white;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 a {
@@ -21,7 +21,6 @@ a {
 
 img {
     height: 370px;
-    margin-top: 30px;
     margin: auto;
     display: block;
     cursor: pointer;
@@ -33,21 +32,12 @@ img {
 
 /*ADICIONAIS*/
 
-.orientacao {
-    opacity: 0.5;
-    margin: 0 15% 5% 15%;
-    text-align: center;
-    animation: blinking 5s infinite;
-    cursor: pointer;
-}
-
 .copyright {
     font-size: 13px;
     margin: 0 15% 5% 15%;
     text-align: center;
     opacity: 0.5;
     margin: 2% 450px 2% 450px;
-    align-content: center;
     cursor: pointer;
 }
 
@@ -70,7 +60,7 @@ button {
 
 
 .play {
-    margin: 40px 600px 40px 600px;
+    margin: 60px 600px 40px 600px;
     align-content: center;
     text-align: center;
     opacity: 0.5;
@@ -99,21 +89,6 @@ button {
 
     o {
         opacity: 100%;
-    }
-}
-
-
-@keyframes blinking {
-    0% {
-        color: transparent;
-    }
-
-    50% {
-        color: white;
-    }
-
-    100% {
-        color: transparent;
     }
 }
 
