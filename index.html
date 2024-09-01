@@ -67,7 +67,7 @@
             }
         });
        
-        window.addEventListener('click', function () {
+        window.addEventListener('load', function () {
             if (audio.paused) {
                 audio.play().catch(error => {
                     console.log('Erro ao tentar tocar o áudio:', error);
