@@ -50,30 +50,6 @@
 
 
 
-    <a class="copyright" href="//github.com/2C-LIA-04">© 2024 DESENVOLVIDO POR ANA FERREIRA. ACESSE MEU GITHUB.</a>
-    </p>
-
-    <script>//audio de fundo configs
-        const audio = document.getElementById('audio');
-        const unMuteCheckbox = document.getElementById('un-mute');
-       
-        audio.muted = false;
-       
-        unMuteCheckbox.addEventListener('change', function () {
-            if (this.checked) {
-                audio.muted = false;  //desmuta
-            } else {
-                audio.muted = true;   //muta
-            }
-        });
-       
-        window.addEventListener('load', function () {
-            if (audio.paused) {
-                audio.play().catch(error => {
-                    console.log('Erro ao tentar tocar o áudio:', error);
-                });
-            }
-        });</script>
 </body>
 
 </html>

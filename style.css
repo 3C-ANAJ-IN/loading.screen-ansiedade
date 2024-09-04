@@ -1,3 +1,5 @@
+/*ana júlia ribeiro ferreira 2c 21.08.24*/
+
 /*ESTRUTURA BÁSICA*/
 
 
@@ -27,23 +29,6 @@ img {
 }
 
 
-
-
-
-/*ADICIONAIS*/
-
-.copyright {
-    font-size: 13px;
-    margin: 0 15% 5% 15%;
-    text-align: center;
-    opacity: 0.5;
-    margin: 2% 450px 2% 450px;
-    cursor: pointer;
-}
-
-
-
-
 /*BOTÃO DE PLAY*/
 
 button {
@@ -56,30 +41,29 @@ button {
     font-size: 20px;
     align-content: center;
     text-align: center;
-    cursor: pointer;
 }
 
 
 .play {
-    margin: 60px 600px 40px 600px;
+    margin: 60px 200px 40px 200px;
+
     align-content: center;
     text-align: center;
     opacity: 0.5;
     animation: efeitoCresceDiminuir 5s infinite;
     animation-play-state: running;
-    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #db7d18;
+    width: 150px;
 }
 
 .play:hover {
-    background-color: #db7d18;
     opacity: 1.0;
     transform: scale(1.1);
     animation-play-state: paused;
 }
-
-
-
-
 
 
 
