@@ -1,21 +1,23 @@
+<!-- ANA JÙLIA RIBEIRO FERREIRA _ 2C. 21/08/24-->
+
+
+
 <!DOCTYPE html>
-<!-- ANA JÙLIA RIBEIRO FERREIRA _ 2c. 21/08/24-->
-
-
 <html lang="pt-br">
-<link rel="stylesheet" href="style.css" />
-<link rel="icon" type="image/png" href="icon.png">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=VT323&display=swap"
-    rel="stylesheet">
-
-</rel>
 
 <head>
-    <title>PLAY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=VT323&display=swap"
+        rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
 </head>
 
 
@@ -23,32 +25,168 @@
 
 
 <body>
-    <header>
-        <!--AUDIO MUTAR E DESMUTAR-->
-        <audio id="audio" src="introsong.mp3" autoplay loop></audio>
 
-        <input type="checkbox" name="un-mute" id="un-mute" checked>
-        <label for="un-mute" class="unmute">
-            <img class="muteunmute" src="unmuted.png" alt="Speaker_Icon.svg">
-    
-        </label>
-        <label for="un-mute" class="mute">
-            <img class="muteunmute" src="muted.png" alt="Mute_Icon.svg">
-        </label>
+    <audio id="audiointro" src="introsong.mp3" loop></audio>
+
+
+    <div class="passo ativo" id="passo-0">
+
+
+
+        <div class="logo">
+            <img src="logocentral.png" alt="imagem principal no meio da tela">
+        </div>
+
+        <section class="menu">
+            <div class="play">
+                <a href="https://2c-lia-04.github.io/you.are.playing-ansiedade/">
+                    <button>JOGAR</button>
+                </a>
+            </div>
+
+            <div class="outros">
+                <button class="btn-proximo" data-proximo="1">CONTROLES</button><br>
+                <button class="btn-proximo" data-proximo="2">COMO JOGAR</button><br>
+            </div>
+        </section>
+
+
+        <div class="mais">
+
+            <a href="https://github.com/2C-LIA-04">
+                <img class="github" src="githubwhite.png" alt="acesso ao github" title="ACESSE MEU GITHUB">
+            </a>
+
+
+            <button class="btn-proximo" data-proximo="3" style="border: none;"><img class="info"
+                    title="MAIS INFORMAÇÕES" src="infowhite.png"></button>
+        </div>
+
+    </div><!--final do passo 0-->
+
+
+
+
+    <div class="passo" id="passo-1"><!--controles-->
+        <h1>CONTROLES</h1>
+        <p>Jogos clicker são conhecidos por sua jogabilidade intuitiva, projetada para serem acessíveis a todos os tipos
+            de jogadores. Seja em um celular ou computador, a mecânica principal é sempre a mesma: clicar. A experiência
+            de jogar um clicker em um celular ou computador pode variar ligeiramente devido às diferenças nas
+            interfaces. </p>
+
+
+
+        <img src="clickfinger.png">
+        <H2>NO CELULAR<br></H2>
+        <P>
+            — Você pode escolher jogar vertical ou horizontalmente.<br>
+            — Clique sobre a opção desejada para escolhê-la. Depois de clicada, não é possível voltar atrás em sua
+            escolha.<br>
+            — O programa em celular possui limitações: não é possível examinar imagens como no computador. <br> — Ao
+            final de
+            cada página, é possível salvar ou apagar seu progresso. </p>
+
+
+
+        <img src="clickmouse.png">
+        <H2>NO COMPUTADOR<br></H2>
+        <P>
+            — Ao passar o mouse sobre as opções, elas seram mostradas como selecionadas. <br>
+            — Ao escolher um caminho, não é
+            possível voltar atrás. <br>
+            — A experiência em computadores oferece maior precisão, é possível examinar imagens através do cursor.<br>
+            — Os botões de salvar e apagar progesso estão localizados no lado esquerdo inferior da página.<br>
+            — O teclado não substitui a mecânica do mouse. </p>
+
+
+
+        <button class="btn-proximo" data-proximo="0"><img class="botaoanterior" src="anterior.png"
+                alt="voltar"></button>
     </div>
-    </header>
 
-    <div class="logo">
-        <img src="artecentral.png">
+
+
+
+    <div class="passo" id="passo-2"><!--como jogar-->
+        <h1>COMO JOGAR</h1>
+
+        <img src="instrucoes.png" style="margin-bottom: 30px; height: 60px;">
+        <p>Para jogar ANSIEDADE, leia as seguintes instruções:<br>
+            — Tenha certeza de salvar suas
+            escolhas ao longo do caminho, saiba que depois de salvo, ao apagar o progresso você retorna ao ínicio da
+            jornada.<br>
+            — Periodicamente, o personagem expressa seus pensamentos no canto inferior direito da tela. Acompanhe seus
+            julgamentos e alinhe suas expectativas ao encarar dificuldades durante a investigação.<br>
+            — Analise situações e
+            comportamentos: suas escolhas
+            afetam o enredo assim como sua relação com os personagens. <br>
+            — Ao encontrar encruzilhadas, esteja atento as pistas ao seu redor. Elas podem ser esclarecedoras. <br>
+            — Você pode examinar itens e situações
+            através do mouse do computador.<br>
+            — Ao decorrer do jogo, você passa por caminhos diferentes e tem a possibilidade de obter itens novos que te
+            auxiliem em sua investigação. Esteja sempre atento(a), um desses itens pode salvar sua vida.<br>
+            — Pequenos minigames significam muito dentro desse universo, dê o seu melhor.
+            <br>Acalme sua ansiedade, você está pronto(a) para jogar!
+        </p>
+
+        <button class="btn-proximo" data-proximo="0"><img class="botaoanterior" src="anterior.png"
+                alt="voltar"></button>
     </div>
 
-    <div class=play>
-        <a href="https://2c-lia-04.github.io/you.are.playing-ansiedade/">
-            <button>JOGAR</button>
-        </a>
+
+
+    <div class="passo" id="passo-3"><!--mais informações-->
+        <h1>TEXT GAMES</h1>
+        <p>"ANSIEDADE: ECOS DA VERDADE" é um jogo de aventura em primeira
+            pessoa inspirado em text games dos anos 60 a 80.
+            Os text games também possuem elementos visuais, mas tem como principal agente o texto, foram
+            populares nos primeiros dias dos computadores devido às limitações gráficas da
+            época, além de terem cativado os fãs com experiências imersivas através da linguagem e
+            narrativa. Se estiver interessado(a), <a
+                href="https://cemeterygames.com/2010/11/05/a-historia-dos-adventures-texto-parte-i-colossal-cave-adventure-adventureland-e-mystery-house/"><strong>clique
+                    aqui.</strong></p></a>
+
+        <img style="height: 200px; margin: auto;"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEkvZYS7rqzN5OMfBx0gN4vLfgZegRASVRZruRRjkJfL3I7_ObAB3D-vHq-7VQW5sGHa1e_JJJ43S2pXxHadSEc0vgbz20x0Lz5Y501THujsl5B6wcB8Y6h_-R9TFD7r4GIItO0YaFvgY/s640/Venganza-pantalla2.png"
+            alt="Venganza - Text based adventure game by Physical Dreams launched for the MSX">
+
+        <p>Iniciado como um projeto escolar, "ANSIEDADE" acaba sendo um jogo de investigação com gráficos muito menos
+            elaborados e uma premissa mais simples.</p>
+
+        <button class="btn-proximo" data-proximo="0"><img class="botaoanterior" src="anterior.png"
+                alt="voltar"></button>
     </div>
 
 
+
+
+
+
+    <script>
+        document.body.style.zoom = "80%"
+        //base
+        document.querySelectorAll('.btn-proximo').forEach(button => {
+            button.addEventListener('click', function () {
+                const nextStep = this.getAttribute('data-proximo');
+                showStep(nextStep);
+            });
+        });
+        function showStep(step) {
+            const allSteps = document.querySelectorAll('.passo');
+            allSteps.forEach(passo => passo.classList.remove('ativo'));
+            const currentPasso = document.getElementById('passo-' + step);
+            currentPasso.classList.add('ativo');
+        }
+
+        //ao carregar
+        window.onload = function () {
+            document.getElementById('audiointro').play();
+        };
+        //ao clicar
+        window.onclick = function () {
+            document.getElementById('audiointro').play();
+        };
+    </script>
 
 </body>
 
